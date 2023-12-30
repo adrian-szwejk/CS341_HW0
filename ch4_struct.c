@@ -39,6 +39,9 @@ Person* createPerson(int age, char* name) {
         exit(EXIT_FAILURE);
     }
 
+    //void *memset(void *dest, int c, size_t count);
+    //memset sets the 1st COUNT bytes of DESTINATION to the value 'c' (unsigned char)
+    //Initializes all the values for all the friends allocated in mem
     memset(p->friends, 0, 10*sizeof(Person*));
     return p;
 }
